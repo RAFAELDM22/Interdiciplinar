@@ -23,13 +23,18 @@ namespace Interdiciplinar
             {
 
                 MessageBox.Show("Usuario Valido");
-                txt_cadastro txt_login = new txt_cadastro();
+                TelaSplash txt_login = new TelaSplash();
                 txt_login.Show();
             }
             else
             {
                 MessageBox.Show("Usuario ou senha invalidos");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

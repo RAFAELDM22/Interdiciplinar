@@ -1,7 +1,7 @@
 ﻿
 namespace Interdiciplinar
 {
-    partial class txt_cadastro
+    partial class TelaSplash
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +29,41 @@ namespace Interdiciplinar
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaSplash));
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // txt_cadastro
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(75, 415);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(597, 23);
+            this.progressBar1.TabIndex = 0;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            // 
+            // TelaSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "txt_cadastro";
-            this.Text = "Cadastro";
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(746, 450);
+            this.Controls.Add(this.progressBar1);
+            this.Name = "TelaSplash";
+            this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.txt_cadastro_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

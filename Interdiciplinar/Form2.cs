@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Interdiciplinar
 {
-    public partial class txt_cadastro : Form
+    public partial class TelaSplash : Form
     {
-        public txt_cadastro()
+        public TelaSplash()
         {
             InitializeComponent();
+        }
+
+        private void txt_cadastro_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
