@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Interdiciplinar
 {
-    public partial class Form3 : Form
+    public partial class CadastroProduto : Form
     {
-        public Form3()
+        public CadastroProduto()
         {
             InitializeComponent();
         }

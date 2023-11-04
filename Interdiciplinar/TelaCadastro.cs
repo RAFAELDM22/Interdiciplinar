@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Interdiciplinar
 {
-    public partial class txt_cadastro : Form
+    public partial class TelaCadastro : Form
     {
-        public txt_cadastro()
+        public TelaCadastro()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            new TelaCadastro().Show();
+            new CadastroProduto().Show();
         }
     }
 }
