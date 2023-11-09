@@ -42,6 +42,8 @@ namespace Interdiciplinar
             this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.forncedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.comprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fornecedorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +53,8 @@ namespace Interdiciplinar
             this.fornecedorToolStripMenuItem,
             this.produtoToolStripMenuItem,
             this.clienteToolStripMenuItem,
-            this.vendasToolStripMenuItem});
+            this.vendasToolStripMenuItem,
+            this.comprasToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -71,13 +74,13 @@ namespace Interdiciplinar
             // cadastrarToolStripMenuItem
             // 
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cadastrarToolStripMenuItem.Text = "Cadastrar";
             // 
             // exibirDadosToolStripMenuItem
             // 
             this.exibirDadosToolStripMenuItem.Name = "exibirDadosToolStripMenuItem";
-            this.exibirDadosToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.exibirDadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exibirDadosToolStripMenuItem.Text = "Exibir dados";
             // 
             // produtoToolStripMenuItem
@@ -92,14 +95,14 @@ namespace Interdiciplinar
             // cadastrarToolStripMenuItem1
             // 
             this.cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
-            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(154, 22);
+            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.cadastrarToolStripMenuItem1.Text = "Cadastrar";
             this.cadastrarToolStripMenuItem1.Click += new System.EventHandler(this.cadastrarToolStripMenuItem1_Click);
             // 
             // exibirProdutosToolStripMenuItem
             // 
             this.exibirProdutosToolStripMenuItem.Name = "exibirProdutosToolStripMenuItem";
-            this.exibirProdutosToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.exibirProdutosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exibirProdutosToolStripMenuItem.Text = "Exibir produtos";
             // 
             // clienteToolStripMenuItem
@@ -114,13 +117,13 @@ namespace Interdiciplinar
             // cadastrarToolStripMenuItem2
             // 
             this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
-            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(138, 22);
+            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
             // 
             // exibirDadosToolStripMenuItem1
             // 
             this.exibirDadosToolStripMenuItem1.Name = "exibirDadosToolStripMenuItem1";
-            this.exibirDadosToolStripMenuItem1.Size = new System.Drawing.Size(138, 22);
+            this.exibirDadosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.exibirDadosToolStripMenuItem1.Text = "Exibir dados";
             // 
             // vendasToolStripMenuItem
@@ -135,14 +138,28 @@ namespace Interdiciplinar
             // forncedorToolStripMenuItem
             // 
             this.forncedorToolStripMenuItem.Name = "forncedorToolStripMenuItem";
-            this.forncedorToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.forncedorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.forncedorToolStripMenuItem.Text = "Fornecedor";
             // 
             // clienteToolStripMenuItem1
             // 
             this.clienteToolStripMenuItem1.Name = "clienteToolStripMenuItem1";
-            this.clienteToolStripMenuItem1.Size = new System.Drawing.Size(134, 22);
+            this.clienteToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.clienteToolStripMenuItem1.Text = "Cliente";
+            // 
+            // comprasToolStripMenuItem
+            // 
+            this.comprasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fornecedorToolStripMenuItem1});
+            this.comprasToolStripMenuItem.Name = "comprasToolStripMenuItem";
+            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(67, 19);
+            this.comprasToolStripMenuItem.Text = "Compras";
+            // 
+            // fornecedorToolStripMenuItem1
+            // 
+            this.fornecedorToolStripMenuItem1.Name = "fornecedorToolStripMenuItem1";
+            this.fornecedorToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.fornecedorToolStripMenuItem1.Text = "Fornecedor";
             // 
             // TelaCadastro
             // 
@@ -176,5 +193,7 @@ namespace Interdiciplinar
         private System.Windows.Forms.ToolStripMenuItem vendasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem forncedorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem comprasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fornecedorToolStripMenuItem1;
     }
 }

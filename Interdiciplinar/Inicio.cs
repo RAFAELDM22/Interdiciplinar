@@ -10,32 +10,35 @@ using System.Windows.Forms;
 
 namespace Interdiciplinar
 {
-    public partial class Form1 : Form
+    public partial class Splash : Form
     {
-        public Form1()
+        public Splash()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (txt_login.Text == "Rafael"  && txt_senha.Text == "12345")
-            {
-
-                MessageBox.Show("Usuario Valido");
-                txt_cadastro txt_login = new txt_cadastro();
-                txt_login.Show();
-            }
-            else
-            {
-                MessageBox.Show("Usuario ou senha invalidos");
-                // alteração!
-            }
-        }
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Login TelaLogin = new Login();
+            TelaLogin.Show();
+            
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (progressBar1.Value < 100)
+            {
+                progressBar1.Value = progressBar1.Value + 2;
+            }
+            else
+            {
+                timerSplash.Enabled = false;
+
+                this.Visible = false;
+            }
         }
     }
 }

@@ -21,5 +21,10 @@ namespace Interdiciplinar
         {
             new TelaCadastro().Show();
         }
+
+        private void btnTelaEstoque_Click(object sender, EventArgs e)
+        {
+            new TelaEstoque().Show();
+        }
     }
 }

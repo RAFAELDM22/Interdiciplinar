@@ -53,7 +53,7 @@ namespace Interdiciplinar
             this.btnTelaCadastro.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnTelaCadastro.Font = new System.Drawing.Font("Segoe UI Historic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTelaCadastro.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnTelaCadastro.Location = new System.Drawing.Point(136, 208);
+            this.btnTelaCadastro.Location = new System.Drawing.Point(159, 212);
             this.btnTelaCadastro.Name = "btnTelaCadastro";
             this.btnTelaCadastro.Size = new System.Drawing.Size(199, 42);
             this.btnTelaCadastro.TabIndex = 1;
@@ -65,12 +65,13 @@ namespace Interdiciplinar
             // 
             this.btnTelaEstoque.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnTelaEstoque.Font = new System.Drawing.Font("Segoe UI Historic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTelaEstoque.Location = new System.Drawing.Point(136, 266);
+            this.btnTelaEstoque.Location = new System.Drawing.Point(159, 273);
             this.btnTelaEstoque.Name = "btnTelaEstoque";
             this.btnTelaEstoque.Size = new System.Drawing.Size(199, 42);
             this.btnTelaEstoque.TabIndex = 2;
             this.btnTelaEstoque.Text = "Tela de estoque";
             this.btnTelaEstoque.UseVisualStyleBackColor = false;
+            this.btnTelaEstoque.Click += new System.EventHandler(this.btnTelaEstoque_Click);
             // 
             // label2
             // 
