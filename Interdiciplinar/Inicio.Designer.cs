@@ -36,9 +36,9 @@ namespace Interdiciplinar
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(153, 440);
+            this.progressBar1.Location = new System.Drawing.Point(217, 440);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(375, 23);
+            this.progressBar1.Size = new System.Drawing.Size(274, 23);
             this.progressBar1.TabIndex = 0;
             // 
             // timerSplash

@@ -107,6 +107,7 @@
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "TelaEstoque";
             this.Text = "TelaEstoque";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

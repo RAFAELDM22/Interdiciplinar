@@ -82,7 +82,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(518, 82);
+            this.button1.Location = new System.Drawing.Point(518, 66);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 26);
             this.button1.TabIndex = 1;
@@ -100,7 +100,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(518, 119);
+            this.button2.Location = new System.Drawing.Point(518, 114);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 28);
             this.button2.TabIndex = 2;
@@ -109,7 +109,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(518, 164);
+            this.button3.Location = new System.Drawing.Point(518, 170);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(106, 25);
             this.button3.TabIndex = 3;
@@ -130,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -143,6 +143,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "CadastroProduto";
             this.Text = "CadastroProduto";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

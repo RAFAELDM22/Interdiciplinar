@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroCliente.Designer.cs">
+      <DependentUpon>CadastroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroFornecedor.Designer.cs">
+      <DependentUpon>CadastroFornecedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastroProduto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,18 @@
     <Compile Include="TelaLogin.Designer.cs">
       <DependentUpon>TelaLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaRegistro.Designer.cs">
+      <DependentUpon>TelaRegistro.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CadastroCliente.resx">
+      <DependentUpon>CadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroFornecedor.resx">
+      <DependentUpon>CadastroFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastroProduto.resx">
       <DependentUpon>CadastroProduto.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +136,9 @@
     </Compile>
     <EmbeddedResource Include="TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaRegistro.resx">
+      <DependentUpon>TelaRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

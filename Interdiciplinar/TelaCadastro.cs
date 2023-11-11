@@ -31,5 +31,20 @@ namespace Interdiciplinar
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new CadastroProduto().Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new CadastroFornecedor().Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new CadastroCliente().Show();
+        }
     }
 }
