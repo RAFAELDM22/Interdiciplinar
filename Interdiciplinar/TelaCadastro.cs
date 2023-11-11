@@ -21,5 +21,15 @@ namespace Interdiciplinar
         {
             new CadastroProduto().Show();
         }
+
+        private void TelaCadastro_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadastrarToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

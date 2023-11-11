@@ -17,14 +17,17 @@ namespace Interdiciplinar
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+
+        
+        private void txt_cadastro_Load(object sender, EventArgs e)
         {
-            new TelaCadastro().Show();
+
         }
 
-        private void btnTelaEstoque_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            new TelaEstoque().Show();
+            new TelaCadastro().Show();
         }
     }
 }
