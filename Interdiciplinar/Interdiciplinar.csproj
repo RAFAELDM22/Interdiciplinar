@@ -183,5 +183,14 @@
   <ItemGroup>
     <None Include="Resources\limpezaInicial.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1293555894cfbfeb674ec9214a7c2fde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38290823-cliente-ícone-do-membro-botão-quadrado-branco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
