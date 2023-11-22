@@ -42,11 +42,11 @@ namespace Interdiciplinar
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(436, 290);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(222, 236);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 38);
+            this.button1.Size = new System.Drawing.Size(116, 31);
             this.button1.TabIndex = 1;
             this.button1.Text = "Produto";
             this.button1.UseVisualStyleBackColor = false;
@@ -54,12 +54,12 @@ namespace Interdiciplinar
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(436, 112);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(222, 91);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(157, 38);
+            this.button2.Size = new System.Drawing.Size(118, 31);
             this.button2.TabIndex = 3;
             this.button2.Text = "Fornecedor";
             this.button2.UseVisualStyleBackColor = false;
@@ -67,11 +67,11 @@ namespace Interdiciplinar
             // 
             // button3
             // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(436, 466);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Location = new System.Drawing.Point(222, 379);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(155, 38);
+            this.button3.Size = new System.Drawing.Size(116, 31);
             this.button3.TabIndex = 5;
             this.button3.Text = "Cliente";
             this.button3.UseVisualStyleBackColor = false;
@@ -79,48 +79,48 @@ namespace Interdiciplinar
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox3.Image = global::Interdiciplinar.Properties.Resources.images;
-            this.pictureBox3.Location = new System.Drawing.Point(453, 15);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Location = new System.Drawing.Point(235, 12);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(124, 89);
+            this.pictureBox3.Size = new System.Drawing.Size(94, 73);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Image = global::Interdiciplinar.Properties.Resources._38290823_cliente_ícone_do_membro_botão_quadrado_branco;
-            this.pictureBox2.Location = new System.Drawing.Point(453, 359);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(235, 292);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(117, 89);
+            this.pictureBox2.Size = new System.Drawing.Size(89, 73);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = global::Interdiciplinar.Properties.Resources._1293555894cfbfeb674ec9214a7c2fde;
-            this.pictureBox1.Location = new System.Drawing.Point(453, 176);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(235, 143);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(124, 90);
+            this.pictureBox1.Size = new System.Drawing.Size(94, 74);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // TelaCadastro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Interdiciplinar.Properties.Resources.azul_fundo_site;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.button2);
@@ -129,7 +129,6 @@ namespace Interdiciplinar
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.HelpButton = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TelaCadastro";
             this.Text = "Tela De Cadastro";
             this.Load += new System.EventHandler(this.TelaCadastro_Load);

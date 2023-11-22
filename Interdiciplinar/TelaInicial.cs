@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Interdiciplinar
 {
     public partial class txt_cadastro : Form
@@ -17,22 +18,42 @@ namespace Interdiciplinar
             InitializeComponent();
         }
 
-        
 
-        
-        private void txt_cadastro_Load(object sender, EventArgs e)
+        private Form FormularioFilho;
+        private void AbrirFormularioFilho(Form formularioFilho)
+
         {
+            if (FormularioFilho != null)
+            {
+                FormularioFilho.Close();
+            }
 
-        }
+            FormularioFilho = formularioFilho;
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            new TelaCadastro().Show();
+            formularioFilho.TopLevel = false;
+            formularioFilho.FormBorderStyle = FormBorderStyle.None;
+            formularioFilho.Dock = DockStyle.Fill;
+            panel2.Controls.Add(FormularioFilho);
+            panel2.Tag = FormularioFilho;
+
+            formularioFilho.BringToFront();
+            formularioFilho.Show();
+
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            new TelaEstoque().Show();
+         
+            AbrirFormularioFilho(new TelaEstoque());
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+            AbrirFormularioFilho(new TelaCadastro());
         }
     }
-}
+
+        
+    }
+
