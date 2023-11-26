@@ -19,7 +19,7 @@ namespace Interdiciplinar
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txt_login.Text == "Rafael"  && txt_senha.Text == "12345")
+            if (txt_login.Text == "Rafael"  && txtSenha.Text == "12345")
             {
 
                 MessageBox.Show("Usuario Valido");

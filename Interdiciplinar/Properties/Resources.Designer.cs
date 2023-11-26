@@ -83,6 +83,16 @@ namespace Interdiciplinar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aquarela {
+            get {
+                object obj = ResourceManager.GetObject("aquarela", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap azul_fundo_site {
             get {
                 object obj = ResourceManager.GetObject("azul-fundo-site", resourceCulture);
@@ -126,6 +136,16 @@ namespace Interdiciplinar.Properties {
         internal static System.Drawing.Bitmap editado2 {
             get {
                 object obj = ResourceManager.GetObject("editado2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundo_azul {
+            get {
+                object obj = ResourceManager.GetObject("fundo azul", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
