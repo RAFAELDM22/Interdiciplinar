@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Interdiciplinar
 {
-    public partial class CadastroCliente : Form
+    public partial class TelaVendas : Form
     {
-        public CadastroCliente()
+        public TelaVendas()
         {
             InitializeComponent();
-        }
-
-        private void imprimirToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            printDialog1.ShowDialog();
         }
     }
 }

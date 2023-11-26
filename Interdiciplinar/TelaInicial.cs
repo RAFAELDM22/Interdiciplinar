@@ -57,6 +57,11 @@ namespace Interdiciplinar
         {
             AbrirFormularioFilho(new TelaRegistro());
         }
+
+        private void txt_cadastro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
         

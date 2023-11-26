@@ -28,64 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtCompras = new System.Windows.Forms.Label();
+            this.txtVendas = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // panel2
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(81, 76);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(132, 112);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.panel2.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel2.Location = new System.Drawing.Point(2, 26);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(622, 401);
+            this.panel2.TabIndex = 1;
             // 
-            // pictureBox2
+            // panel1
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Location = new System.Drawing.Point(348, 76);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(132, 112);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.panel1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.panel1.Controls.Add(this.txtVendas);
+            this.panel1.Controls.Add(this.txtCompras);
+            this.panel1.Location = new System.Drawing.Point(2, -2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(622, 29);
+            this.panel1.TabIndex = 2;
             // 
-            // button1
+            // txtCompras
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(81, 204);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 27);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Compras";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txtCompras.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtCompras.AutoSize = true;
+            this.txtCompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCompras.ForeColor = System.Drawing.Color.White;
+            this.txtCompras.Location = new System.Drawing.Point(155, 0);
+            this.txtCompras.Name = "txtCompras";
+            this.txtCompras.Size = new System.Drawing.Size(105, 25);
+            this.txtCompras.TabIndex = 0;
+            this.txtCompras.Text = "Compras";
+            this.txtCompras.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // txtVendas
+            // 
+            this.txtVendas.AutoSize = true;
+            this.txtVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVendas.ForeColor = System.Drawing.Color.White;
+            this.txtVendas.Location = new System.Drawing.Point(317, 0);
+            this.txtVendas.Name = "txtVendas";
+            this.txtVendas.Size = new System.Drawing.Size(91, 25);
+            this.txtVendas.TabIndex = 1;
+            this.txtVendas.Text = "Vendas";
+            this.txtVendas.Click += new System.EventHandler(this.txtVendas_Click);
             // 
             // TelaRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 411);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(625, 411);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "TelaRegistro";
             this.Text = "TelaRegistro";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Load += new System.EventHandler(this.TelaRegistro_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label txtVendas;
+        private System.Windows.Forms.Label txtCompras;
     }
 }

@@ -71,6 +71,12 @@
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistroCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroCompras.Designer.cs">
+      <DependentUpon>RegistroCompras.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaEstoque.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,12 @@
     <Compile Include="TelaRegistro.Designer.cs">
       <DependentUpon>TelaRegistro.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaVendas.Designer.cs">
+      <DependentUpon>TelaVendas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CadastroCliente.resx">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroCompras.resx">
+      <DependentUpon>RegistroCompras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaEstoque.resx">
       <DependentUpon>TelaEstoque.cs</DependentUpon>
@@ -139,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaRegistro.resx">
       <DependentUpon>TelaRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaVendas.resx">
+      <DependentUpon>TelaVendas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
