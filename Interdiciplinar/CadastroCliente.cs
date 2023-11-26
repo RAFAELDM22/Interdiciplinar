@@ -17,9 +17,10 @@ namespace Interdiciplinar
             InitializeComponent();
         }
 
-        private void imprimirToolStripMenuItem_Click(object sender, EventArgs e)
+       
+        private void CadastroCliente_Load(object sender, EventArgs e)
         {
-            printDialog1.ShowDialog();
+
         }
     }
 }
