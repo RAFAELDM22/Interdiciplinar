@@ -83,6 +83,16 @@ namespace Interdiciplinar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aaaaaaaaaaaaaah {
+            get {
+                object obj = ResourceManager.GetObject("aaaaaaaaaaaaaah", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aquarela {
             get {
                 object obj = ResourceManager.GetObject("aquarela", resourceCulture);
@@ -106,6 +116,16 @@ namespace Interdiciplinar.Properties {
         internal static System.Drawing.Bitmap cadastro {
             get {
                 object obj = ResourceManager.GetObject("cadastro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap casaDaLimpeza {
+            get {
+                object obj = ResourceManager.GetObject("casaDaLimpeza", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
