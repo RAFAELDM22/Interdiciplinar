@@ -36,10 +36,11 @@ namespace Interdiciplinar
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(289, 542);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.progressBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
+            this.progressBar1.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.progressBar1.Location = new System.Drawing.Point(194, 426);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(365, 28);
+            this.progressBar1.Size = new System.Drawing.Size(329, 23);
             this.progressBar1.TabIndex = 0;
             // 
             // timerSplash
@@ -49,15 +50,15 @@ namespace Interdiciplinar
             // 
             // Splash
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Interdiciplinar.Properties.Resources.imgEditado;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(969, 567);
+            this.ClientSize = new System.Drawing.Size(727, 461);
             this.Controls.Add(this.progressBar1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Splash";
             this.Text = "Inicio";
             this.Load += new System.EventHandler(this.Form1_Load);
