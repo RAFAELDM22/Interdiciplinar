@@ -64,7 +64,7 @@ namespace Interdiciplinar
             else
             {
                 MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
-                mySql.Open();
+                conexaoMYSQL.Open();
                 MySqlCommand comando = new MySqlCommand("Insert into Cliente (nome, cnpj, telefone) values ('" + txtNomeCliente.Text + "','" + txtContatoCliente.Text + "', '" + txtCNPJ.Text+"');", mySql);
                 comando.ExecuteNonQuery();
 

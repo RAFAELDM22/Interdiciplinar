@@ -37,13 +37,13 @@ namespace Interdiciplinar
             MySqlDataAdapter adapter = new MySqlDataAdapter("select * from Compra", conexaoMYSQL);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
-            dgvCompras.DataSource = dt;
+            dgvVendas.DataSource = dt;
 
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            if (txtdata.Text == "" || txtValor.Text == "")
+            if (txtData.Text == "" || txtValor.Text == "")
             {
 
                 MessageBox.Show("Por favor digite em um campo");

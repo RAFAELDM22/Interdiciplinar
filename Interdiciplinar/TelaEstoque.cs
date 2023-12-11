@@ -22,7 +22,7 @@ namespace Interdiciplinar
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
-            conexaoMYSQL.Open();
+            object value = conexaoMYSQL.Open();
 
             MySqlDataAdapter adapter = new MySqlDataAdapter("select * from Estoque", conexaoMYSQL);
             DataTable dt = new DataTable();
@@ -40,7 +40,7 @@ namespace Interdiciplinar
         {
             MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
             conexaoMYSQL.Open();
-            MySqlCommand comando = new MySqlCommand("update Estoque set quantidade_em_estoque='" + txtQntd.Text + "', idproduto='" + txtProdt.Text + "', conexaoMYSQL);
+            MySqlCommand comando =("update Estoque set quantidade_em_estoque='" + txtQntd.Text + "', idproduto='" + txtProdt.Text + "', conexaoMYSQL);
             comando.ExecuteNonQuery();
             MessageBox.Show("Dados alterados!!!");
             txtQntd.Text = "";
@@ -48,6 +48,45 @@ namespace Interdiciplinar
             CarregarDadosBanco();
         }
 
-       
+        private void CarregarDadosBanco()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    internal class MySqlDataAdapter
+    {
+        public MySqlDataAdapter(string v, MySqlConnection conexaoMYSQL)
+        {
+        }
+
+        internal void Fill(DataTable dt)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    internal class MySqlConnection
+    {
+        public MySqlConnection(string conexao)
+        {
+        }
+
+        internal object Open()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    internal class MySqlCommand
+    {
+        public MySqlCommand(string v, object mySql)
+        {
+        }
+
+        internal void ExecuteNonQuery()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
