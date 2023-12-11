@@ -40,7 +40,7 @@ namespace Interdiciplinar
         {
             MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
             conexaoMYSQL.Open();
-            MySqlCommand comando =("update Estoque set quantidade_em_estoque='" + txtQntd.Text + "', idproduto='" + txtProdt.Text + "', conexaoMYSQL);
+            MySqlCommand comando = ("update Estoque set quantidade_em_estoque='" + txtQntd.Text + "', idproduto='" + txtProdt.Text + "' where idEstoque= + txtProdt.Text", conexaoMYSQL);
             comando.ExecuteNonQuery();
             MessageBox.Show("Dados alterados!!!");
             txtQntd.Text = "";
@@ -85,6 +85,11 @@ namespace Interdiciplinar
         }
 
         internal void ExecuteNonQuery()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static implicit operator MySqlCommand((string, MySqlConnection conexaoMYSQL) v)
         {
             throw new NotImplementedException();
         }
