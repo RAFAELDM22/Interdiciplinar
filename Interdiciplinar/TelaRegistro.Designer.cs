@@ -39,7 +39,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.AliceBlue;
             this.panel2.Location = new System.Drawing.Point(3, 32);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(829, 482);
             this.panel2.TabIndex = 1;
@@ -50,7 +50,7 @@
             this.panel1.Controls.Add(this.txtVendas);
             this.panel1.Controls.Add(this.txtCompras);
             this.panel1.Location = new System.Drawing.Point(3, -2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(829, 36);
             this.panel1.TabIndex = 2;
@@ -91,7 +91,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaRegistro";
             this.Text = "TelaRegistro";
             this.Load += new System.EventHandler(this.TelaRegistro_Load);
