@@ -42,7 +42,7 @@ namespace Interdiciplinar
 
         private void txtPesquisar_Click(object sender, EventArgs e)
         {
-            if (txtdata.Text == "" || txtValor.Text == "" )
+            if (txtdata.Text == "" || txtValor.Text == "")
             {
 
                 MessageBox.Show("Por favor digite em um campo");
@@ -50,10 +50,11 @@ namespace Interdiciplinar
             else
             {
                 MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
-                mySql.Open();
-                MySqlCommand comando = new MySqlCommand("Insert into Compra (data_compra, valor_total) values ('" + txtdata.Text + "','" + txtValor.Text + "'," mySql) ;
+                conexaoMYSQL.Open();
+                MySqlCommand comando = new MySqlCommand("Insert into Compra (data_compra, valor_total) values ('" + txtdata.Text + "','" + txtValor.Text, conexaoMYSQL);
                 comando.ExecuteNonQuery();
                 CarregarDadosBanco();
             }
+        }
     }
 }
