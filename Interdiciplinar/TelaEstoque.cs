@@ -44,7 +44,7 @@ namespace Interdiciplinar
         {
             MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
             conexaoMYSQL.Open();
-            MySqlCommand comando = ("update Estoque set quantidade_em_estoque='" + txtQntd.Text + "', idproduto='" + txtProdt.Text + "' where idEstoque=" + txtProdt.Text, conexaoMYSQL);
+            MySqlCommand comando = new MySqlCommand("update Estoque set quantidade_em_estoque=" + txtQntd.Text + ", idproduto= " + txtProdt.Text + " where idEstoque=" + txtProdt.Text, conexaoMYSQL);
             comando.ExecuteNonQuery();
             MessageBox.Show("Dados alterados!!!");
             txtQntd.Text = "";

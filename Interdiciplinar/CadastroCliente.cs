@@ -95,7 +95,7 @@ namespace Interdiciplinar
         private void btnExcluir_Click(object sender, EventArgs e)
         {
 
-            DialogResult caixaMensagem = MessageBox.Show("Deseja realmente excluir esse cliente?", yesNo);
+            DialogResult caixaMensagem = MessageBox.Show("Deseja realmente excluir esse cliente?", "Cliente", MessageBoxButtons.YesNo);
  
 if (caixaMensagem == DialogResult.Yes)
 {
