@@ -19,7 +19,7 @@ namespace Interdiciplinar
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "Admin" && txtSenha.Text == "Admin@123")
+            if (txtUsuario.Text == "Admin" && txtSenha.Text == "@123")
             {
 
                 MessageBox.Show("Usuario Valido");
