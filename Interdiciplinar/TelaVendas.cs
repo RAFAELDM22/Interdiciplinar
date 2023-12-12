@@ -34,7 +34,7 @@ namespace Interdiciplinar
             MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
             conexaoMYSQL.Open();
 
-            MySqlDataAdapter adapter = new MySqlDataAdapter("select * from Compra", conexaoMYSQL);
+            MySqlDataAdapter adapter = new MySqlDataAdapter("select * from Venda", conexaoMYSQL);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
             dgvVendas.DataSource = dt;
@@ -51,8 +51,8 @@ namespace Interdiciplinar
             else
             {
                 MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
-                mySql.Open();
-                MySqlCommand comando = new MySqlCommand("Insert into Venda (data_venda, valor_total) values ('" + txtData.Text + "','" + txtValor.Text + "'," mySql);
+                conexaoMYSQL.Open();
+                MySqlCommand comando = new MySqlCommand("Insert into Venda (data_venda, valor_total) values ('" + txtData.Text + "','" + txtValor.Text, conexaoMYSQL);
                 comando.ExecuteNonQuery();
                 CarregarDadosBanco();
             }

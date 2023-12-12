@@ -58,8 +58,8 @@ namespace Interdiciplinar
             else
             {
                 MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
-                mySql.Open();
-                MySqlCommand comando = new MySqlCommand("Insert into Produto (nome, descrição, quantidade, preço) values ('" + txtNomeProduto.Text + "','" + txtDescrição.Text + "', '" + txtQuantidade.Text + "', '" + txtPreco.Text + "');", mySql);
+                conexaoMYSQL.Open();
+                MySqlCommand comando = new MySqlCommand("Insert into Produto (nome, descrição, quantidade, preço) values ('" + txtNomeProduto.Text + "','" + txtDescrição.Text + "', '" + txtQuantidade.Text + "', '" + txtPreco.Text + "');", conexaoMYSQL); 
                 comando.ExecuteNonQuery();
 
                 MessageBox.Show("Produto registrado com sucesso!");
@@ -75,7 +75,7 @@ namespace Interdiciplinar
         {
             MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
             conexaoMYSQL.Open();
-            MySqlCommand comando = new MySqlCommand("update Produto set nome='" + txtNomeProduto.Text + "', descrição='" + txtDescrição.Text + "', quantidade='" + txtQuantidade.Text + "', preço ='" + txtPreco.Text +"', conexaoMYSQL);
+            MySqlCommand comando = new MySqlCommand("update Produto set nome='" + txtNomeProduto.Text + "', descrição='" + txtDescrição.Text + "', quantidade='" + txtQuantidade.Text + "', preço ='" + txtPreco.Text + ";", conexaoMYSQL);
             comando.ExecuteNonQuery();
             MessageBox.Show("Dados alterados!!!");
             txtNomeProduto.Text = "";
@@ -87,14 +87,14 @@ namespace Interdiciplinar
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            DialogResult caixaMensagem = MessageBox.Show("Deseja realmente excluir esse cliente?", MessageBoxButtons.YesNo);
+            DialogResult caixaMensagem = MessageBox.Show("Deseja realmente excluir esse cliente?", "Dlea", MessageBoxButtons.YesNo);
 
             if (caixaMensagem == DialogResult.Yes)
             {
                 MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
 
                 conexaoMYSQL.Open();
-                MySqlCommand comando = new MySqlCommand("delete from Cliente where Produto= " + txtNomeProduto.Text + ";", conexaoMYSQL);
+                MySqlCommand comando = new MySqlCommand("delete from Produto where idProduto= " + txtNomeProduto.Text + ";", conexaoMYSQL);
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Dados excluídos com sucesso!");
                 txtNomeProduto.Text = "";

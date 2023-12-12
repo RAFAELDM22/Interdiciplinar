@@ -34,10 +34,10 @@ namespace Interdiciplinar
             MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
             conexaoMYSQL.Open();
 
-            MySqlDataAdapter adapter = new MySqlDataAdapter("select * from Cliente", conexaoMYSQL);
+            MySqlDataAdapter adapter = new MySqlDataAdapter("select * from Fornecedor", conexaoMYSQL);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
-            dgvCliente.DataSource = dt;
+            dgvFornecedor.DataSource = dt;
 
         }
 
@@ -58,8 +58,8 @@ namespace Interdiciplinar
             else
             {
                 MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
-                mySql.Open();
-                MySqlCommand comando = new MySqlCommand("Insert into Fornecedor (nome, cnpj, telefone) values ('" + txtNomeFornecedor.Text + "','" + txtContatoFornecedor.Text + "', '" + txtCnpjFornecedor.Text + "');", mySql);
+                conexaoMYSQL.Open();
+                MySqlCommand comando = new MySqlCommand("Insert into Fornecedor (nome, cnpj, telefone) values ('" + txtNomeFornecedor.Text + "','" + txtContatoFornecedor.Text + "', '" + txtCnpjFornecedor.Text + "');", conexaoMYSQL);
                 comando.ExecuteNonQuery();
 
                 MessageBox.Show("Fornecedor registrado com sucesso!");
@@ -74,7 +74,7 @@ namespace Interdiciplinar
         {
             MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
             conexaoMYSQL.Open();
-            MySqlCommand comando = new MySqlCommand("update Fornecedor set nome='" + txtNomeFornecedor.Text + "', telefone='" + txtContatoFornecedor.Text + "', cnpj='" + txtCnpjFornecedor.Text + "', conexaoMYSQL);
+            MySqlCommand comando = new MySqlCommand("update Fornecedor set nome='" + txtNomeFornecedor.Text + "', telefone='" + txtContatoFornecedor.Text + "' where idFornecedor=" + txtCnpjFornecedor.Text, conexaoMYSQL);
             comando.ExecuteNonQuery();
             MessageBox.Show("Dados alterados!!!");
             txtNomeFornecedor.Text = "";

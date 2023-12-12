@@ -14,6 +14,9 @@ namespace Interdiciplinar
 {
     public partial class CadastroCliente : Form
     {
+        private object comando;
+        private string yesNo;
+
         public CadastroCliente()
         {
             InitializeComponent();
@@ -65,8 +68,7 @@ namespace Interdiciplinar
             {
                 MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
                 conexaoMYSQL.Open();
-                MySqlCommand comando = new MySqlCommand("Insert into Cliente (nome, cnpj, telefone) values ('" + txtNomeCliente.Text + "','" + txtContatoCliente.Text + "', '" + txtCNPJ.Text+"');", mySql);
-                comando.ExecuteNonQuery();
+                MySqlCommand mySqlCommand = new MySqlCommand("update Cliente set nome='" + txtNomeCliente.Text + "', telefone='" + txtContatoCliente.Text + "', cnpj='" + txtCNPJ.Text + "' where id_cliente=" + txtCNPJ.Text, conexaoMYSQL);
 
                 MessageBox.Show("Cliente registrado com sucesso!");
                 txtNomeCliente.Text = "";
@@ -80,33 +82,33 @@ namespace Interdiciplinar
         {
             MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
             conexaoMYSQL.Open();
-            MySqlCommand comando = new MySqlCommand("update Cliente set nome='" + txtNomeCliente.Text + "', telefone='" + txtContatoCliente.Text + "', cnpj='" + txtCNPJ.Text + "', conexaoMYSQL);
+            MySqlCommand comando = new MySqlCommand("delete from Cliente where Cliente= " + txtCNPJ.Text + ";", conexaoMYSQL);
             comando.ExecuteNonQuery();
-            MessageBox.Show("Dados alterados!!!");
+            MessageBox.Show("Dados excluídos com sucesso!");
             txtNomeCliente.Text = "";
             txtContatoCliente.Text = "";
             txtCNPJ.Text = "";
+            groupBox2.Visible = false;
             CarregarDadosBanco();
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
 
-            DialogResult caixaMensagem = MessageBox.Show("Deseja realmente excluir esse cliente?", MessageBoxButtons.YesNo);
-
-            if (caixaMensagem == DialogResult.Yes)
-            {
-                MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
-               
-                conexaoMYSQL.Open();
-                MySqlCommand comando = new MySqlCommand("delete from Cliente where Cliente= " + txtCNPJ.Text + ";", conexaoMYSQL);
-                comando.ExecuteNonQuery();
-                MessageBox.Show("Dados excluídos com sucesso!");
-                txtNomeCliente.Text = "";
-                txtContatoCliente.Text = "";
-                txtCNPJ.Text = "";
-                groupBox2.Visible = false;
-                CarregarDadosBanco();
+            DialogResult caixaMensagem = MessageBox.Show("Deseja realmente excluir esse cliente?", yesNo);
+ 
+if (caixaMensagem == DialogResult.Yes)
+{
+    MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
+    conexaoMYSQL.Open();
+    MySqlCommand comando = new MySqlCommand("delete from Cliente where Cliente= " + txtCNPJ.Text + ";", conexaoMYSQL);
+    comando.ExecuteNonQuery();
+    MessageBox.Show("Dados excluídos com sucesso!");
+    txtNomeCliente.Text = "";
+    txtContatoCliente.Text = "";
+    txtCNPJ.Text = "";
+    groupBox2.Visible = false;
+    CarregarDadosBanco();
             }
         }
     }
