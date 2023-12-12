@@ -10,7 +10,7 @@ namespace Interdiciplinar
 
     static class Program
     {
-        public static string conexao = "server=localhost;database=gerenciamento_dlea;uid=root;pwd=";
+        public static string conexao = "server=localhost;database=gerenciamento_dlea;uid=root;pwd=Hisouka";
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>

@@ -59,7 +59,7 @@ namespace Interdiciplinar
             {
                 MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexao);
                 conexaoMYSQL.Open();
-                MySqlCommand comando = new MySqlCommand("Insert into Fornecedor (nome, cnpj, telefone) values ('" + txtNomeFornecedor.Text + "','" + txtContatoFornecedor.Text + "', '" + txtCnpjFornecedor.Text + "');", conexaoMYSQL);
+                MySqlCommand comando = new MySqlCommand("Insert into Fornecedor (nome, cnpj, telefone) values ('" + txtNomeFornecedor.Text + "','" + txtCnpjFornecedor.Text + "', '" + txtContatoFornecedor.Text + "');", conexaoMYSQL);
                 comando.ExecuteNonQuery();
 
                 MessageBox.Show("Fornecedor registrado com sucesso!");
