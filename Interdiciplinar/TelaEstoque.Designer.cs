@@ -70,7 +70,7 @@
             this.btnGeral.TabStop = true;
             this.btnGeral.Text = "Geral";
             this.btnGeral.UseVisualStyleBackColor = true;
-            this.btnGeral.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+           
             // 
             // radioButton2
             // 
